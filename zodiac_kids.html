@@ -6,25 +6,64 @@
 </head>
 <style>
 
-th, td {
-  border:1px solid black;
-  border-radius:5px;
-  border-collapse: collapse;
+body{
+  background-color: lightblue;
+  background-position: center;
 }
+table {
+  padding: 80px 80px 80px 80px;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Courier;
+}
+p {
+  font-family: Courier;
+  color:white;
+  text-align: center;
+}
+th {
+  border:5px groove rgba(82, 0, 176,0.8);
+  background-color: rgba(186, 186, 186,0.8);
+  font-family: Courier;
+}
+th:nth-child(even) {
+  border:5px groove #005682;
+  background-color: rgba(242, 242, 242,0.8);
+}
+td {
+  border:0px solid white;
+  border-spacing: 5px;
+  border-collapse: collapse;
+  padding: 5px;
+  font-family: Courier;
+}
+tr:nth-child(even) {
+  background-color: rgba(242, 242, 242,0.8);
+}
+tr:nth-child(odd) {
+  background-color: rgba(186, 186, 186,0.8);
+}
+tr:hover {background-color: rgba(192, 165, 212,0.8)}
 </style>
 <body>
-
+<div id="title">
 <h2>Orenia, Part III: The Zodiac Kids</h2>
 
 <p>The meeting of a musician and an alien girl heralds the end of the world.</p>
-
+</div>
+<div id="table">
 <table id="ZK" style="width:100%">
+  <thead>
   <tr>
     <th>Name</th>
     <th>Sign</th>
     <th>Card</th>
     <th>Country</th>
   </tr>
+  </thead>
+  <tbody>
   <tr>
     <td><a href="1sofus.html" target="_blank">Sofus Mikkelsen</a></td>
     <td>Aries</td>
@@ -169,8 +208,8 @@ th, td {
     <td><a href="https://en.wikipedia.org/wiki/The_World_(tarot_card)" target="_blank">XXI The World</a></td>
     <td>???</td>
   </tr>
+  </tbody>
 </table>
-
-
+</div>
 </body>
 </html>

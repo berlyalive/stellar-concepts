@@ -1,4 +1,113 @@
 <html>
-  <h1>This is an index!</h1>
-  <p>there's nothing here just yet, except <a href="zodiac_kids.html">this.</a></p>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+body{
+  background-color: lightblue;
+  background-position: center;
+}
+h1, h2, h3, h4 {
+  color: white;
+  text-align: center;
+  font-family: Courier;
+}
+p {
+  font-family: Courier;
+  color:white;
+  text-align: center;
+}
+div.gallery {
+  margin: 50px;
+  float: left;
+  width: 150px;
+  padding: 20px 20px 20px 20px;
+}
+
+div.gallery:hover {
+  background-color: rgba(192, 165, 212,0.8)
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family:Courier;
+}
+#dialog-box {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#dialog-box p {
+    color: black;
+  }
+</style>
+
+<body>
+  <h1>Stellar Concepts</h1>
+<div class="gallery">
+  <a>
+      <img src="underconstruction.png" alt="under construction!" width="300" height="300" onclick="showDialog()" >
+    </a>
+  <div class="desc">This section is not finished yet. Come back soon!</div>
+</div>
+
+<div class="gallery">
+  <a>
+      <img src="underconstruction.png" alt="under construction!" width="300" height="300" onclick="showDialog()">
+    </a>
+  <div class="desc">This section is not finished yet. Come back soon!</div>
+</div>
+
+<div class="gallery">
+<a target="_blank" href="zodiac_kids.html">
+  <img src="zodiac.gif" alt="A .gif of zodiac signs on a loop." width="300" height="300">
+</a>
+<div class="desc">The Zodiac Kids</div>
+</div>
+
+<div class="gallery">
+  <a>
+      <img src="underconstruction.png" alt="under construction!" width="300" height="300" onclick="showDialog()">
+    </a>
+  <div class="desc">This section is not finished yet. Come back soon!</div>
+</div>
+
+<div class="gallery">
+  <a>
+      <img src="underconstruction.png" alt="under construction!" width="300" height="300" onclick="showDialog()">
+    </a>
+  <div class="desc">This section is not finished yet. Come back soon!</div>
+</div>
+<!-- Don't forget to copy the WIP bits of the code with the zodiac kids one when
+you do link it up! */ -->
+
+<div id="dialog-box">
+  <p>This part of the website isn't finished yet. Please look forward to it!</p>
+  <button onclick="closeDialog()">Close</button>
+</div>
+
+</body>
+<script>
+   // JavaScript functions to show and close the dialog
+   function showDialog() {
+     document.getElementById('dialog-box').style.display = 'block';
+   }
+
+   function closeDialog() {
+     document.getElementById('dialog-box').style.display = 'none';
+   }
+ </script>
 </html>
